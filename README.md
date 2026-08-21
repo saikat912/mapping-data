@@ -1,15 +1,31 @@
-# Mapping Data in Python
-Coursera Lesson 2: Mapping Data to Python
+# Wine Data Filtering Project
 
-This repository is part of the Coursera course: [Python, Bash and SQL Essentials for Data Engineering Specialization](https://www.coursera.org/specializations/python-bash-sql-data-engineering-duke) that covers the following topics:
+## Overview
 
-1. Develop data engineering solutions using Python and the Linux environment
-2. Design scripts to connect and query a SQL database using Python
-3. Use a scraping tool to extract data from the web
-4. Setup a provisioned Python project environment
+This project loads wine-rating data from a CSV file,
+filters wines based on their rating, and saves all
+matching records into a formatted JSON file.
 
-## Exercise
-For this exercise, you will be using data from the [sample_data/](/../../tree/main/sample_data) and the [exercise.ipynb](/../../tree/main/exercise.ipynb) notebook. The notebook contains pre-written code that you can use to complete the exercise. Please refer to the Coursera instructions for details on how to complete this exercise.
+## What I did
 
-## Questions or Issues?
-Please use the [Issues](/../../issues) tab to report any issues or ask questions. Any feedback is welcome!
+1. Loaded the CSV data.
+2. Converted the data into a Pandas DataFrame.
+3. Converted the DataFrame into a Python dictionary.
+4. Checked each wine's rating.
+5. Captured wines with a rating greater than 90.
+6. Saved the matching records as `wines_over_90.json`.
+
+## Condition
+
+The project selects wines where:
+
+rating > 90
+
+## Files
+
+- `exercise.ipynb` — Python/Jupyter Notebook
+- `wines_over_90.json` — filtered results
+- `demo.mp4` — project demonstration
+
+## Demo Video
+
